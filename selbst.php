@@ -4,19 +4,17 @@
 <head>
 <title>selbst erstellt</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/highcharts.js"></script>
-		<!-- 1a) Optional: add a theme file -->
-		<!--
-			<script type="text/javascript" src="../js/themes/gray.js"></script>
-		-->
-		<!-- 1b) Optional: the exporting module -->
-		<script type="text/javascript" src="/js/modules/exporting.js"></script>
+	<script type="text/javascript" src="../../../js/highcharts.js"></script>
+	<script type="text/javascript" src="../../../js/themes/gray.js"></script>
+	<script type="text/javascript" src="../../../js/modules/exporting.js"></script>
 <?php
 
 if (isset($_POST) && $_POST['enter']=="anzeigen"){
 	include_once('class.Hightchart_tojs.php');
-	$cvs="1,2,3,4,5";
+
+	$cvs="1,2,3,4,5"; //wird dann von der datei eingelesen.
 	$options='erstmal egal';
+
 	$ausgabe = new Hightchart_tojs($cvs,$options);
 	echo $ausgabe->get_js();
 }
