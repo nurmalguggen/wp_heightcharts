@@ -32,6 +32,21 @@ Optionen: <input type="text" name="options"></br>
 
 if (isset($_POST) && $_POST['enter']=="anzeigen"){
 	echo "<div style='widht:900px;height:500px;border:1px solid black'>Hier wird das CSV mit den Optionen als Highchart bzw Errors Kaputte csv oder falsche optionen angezeigt.	<div id='container' style='width: 800px; height: 400px; margin: 0 auto'></div></div>";
+//speichern in json array: [1,2,3,4,5]
+if(isset($_POST[csv])){ //csv speichern aber wohin in wp üblich?
+
+
+
+
+
+
+
+
+
+
+
+}
+
 };
 ?>
 </body>
